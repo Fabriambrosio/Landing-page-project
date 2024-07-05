@@ -26,19 +26,22 @@ body {
   padding: 10px 5%;
 }
 
-.header .logo {
+.header .logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
   cursor: pointer;
   margin-right: auto;
 }
 
-.header .logo img {
+.header .logo-container img {
   height: 70px;
   width: 90px;
   transition: all 0.3s;
   background-color: #341919;
 }
 
-.header .logo img:hover {
+.header .logo-container img:hover {
   transform: scale(1.2);
 }
 
@@ -380,6 +383,28 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #3e8e41;
+}
+
+footer {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+@keyframes movelogo {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo-container img {
+  animation: movelogo 1s ease-in-out;
 }
 
 /* Mediaqueries */
@@ -793,13 +818,4 @@ input[type="submit"]:hover {
   .content-blog p {
     font-size: 1.2rem;
   }
-}
-
-footer {
-  margin-top: 10rem;
-  width: 100%;
-}
-
-label {
-  font-size: 1.2rem;
 }
