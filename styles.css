@@ -6,7 +6,7 @@
   padding: 0;
   font-family: "Popins", sans-serif;
   font-size: 1rem;
-  max-width: 1300px;
+  max-width: 1400px;
 }
 
 html {
@@ -383,7 +383,7 @@ input[type="submit"]:hover {
 }
 
 /* Mediaqueries */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   html {
     font-size: 1rem;
   }
